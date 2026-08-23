@@ -157,3 +157,257 @@
       padding-top: 42px;
       border-top: 1px solid var(--border);
     }
+
+    h2 {
+      margin: 0 0 14px;
+      color: white;
+      font-size: clamp(1.3rem, 3.8vw, 1.75rem);
+      line-height: 1.25;
+    }
+
+    p { margin: 0 0 14px; color: var(--muted); }
+    ul { margin: 14px 0 0; padding-left: 1.25rem; color: var(--muted); }
+    li + li { margin-top: 8px; }
+
+    .notice {
+      margin-top: 18px;
+      padding: 18px 20px;
+      border-left: 3px solid var(--accent);
+      border-radius: 4px 14px 14px 4px;
+      background: var(--surface-soft);
+      color: var(--text);
+    }
+
+    .placeholder {
+      display: inline-block;
+      padding: 2px 7px;
+      border: 1px dashed var(--accent-soft);
+      border-radius: 6px;
+      color: white;
+      background: rgba(255, 20, 147, 0.12);
+      font-weight: 750;
+    }
+
+    footer {
+      padding: 24px 4px 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    [data-language] { display: none; }
+    [data-language].active { display: block; }
+
+    @media (max-width: 680px) {
+      .page { width: min(100% - 20px, 920px); padding-top: 14px; }
+      header { padding-bottom: 18px; }
+      main { border-radius: 22px; }
+      .summary { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a class="brand" href="#top"><span>OFF</span> THE WALL</a>
+      <div class="language-switch" role="group" aria-label="Sprache auswählen / Select language">
+        <button type="button" id="language-de" aria-pressed="true">DE</button>
+        <button type="button" id="language-en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <article data-language="de" class="active" lang="de">
+        <div class="hero">
+          <p class="eyebrow">Off The Wall · Android-App</p>
+          <h1>Datenschutzerklärung</h1>
+          <p class="intro">Off The Wall verarbeitet Bilder und Projekte direkt auf deinem Gerät. Es gibt keine Benutzerkonten, keine Werbung und keine automatische Übertragung an den Betreiber.</p>
+          <div class="summary">
+            <div><strong>Lokal</strong>Bilder und Projekte bleiben auf deinem Gerät.</div>
+            <div><strong>Freiwillig</strong>Kamera und Diagnose sind optionale Funktionen.</div>
+            <div><strong>Transparent</strong>Geteilt wird nur nach deiner ausdrücklichen Aktion.</div>
+          </div>
+        </div>
+
+        <div class="content">
+          <section>
+            <h2>1. Verantwortlicher</h2>
+            <p>Verantwortlich für die App und diese Datenschutzerklärung:</p>
+            <p><span class="placeholder">DEIN VOLLSTÄNDIGER NAME / UNTERNEHMEN</span><br>
+              E-Mail: <a href="mailto:DEINE-EMAIL@BEISPIEL.DE"><span class="placeholder">DEINE-EMAIL@BEISPIEL.DE</span></a></p>
+            <div class="notice">Ersetze vor der Veröffentlichung die beiden markierten Angaben durch deinen echten Namen beziehungsweise Unternehmensnamen und eine erreichbare Kontaktadresse.</div>
+          </section>
+
+          <section>
+            <h2>2. Grundsatz der Datenverarbeitung</h2>
+            <p>Off The Wall benötigt kein Benutzerkonto und betreibt keinen eigenen Serverdienst. Importierte Kunstwerke, Raumfotos, Projekte und Exporte werden lokal auf dem Gerät verarbeitet. Die App enthält derzeit keine Werbe-, Analyse-, Tracking- oder Cloud-SDKs und übermittelt keine personenbezogenen Daten automatisch an den Betreiber.</p>
+          </section>
+
+          <section>
+            <h2>3. Bilder, Raumfotos und Projekte</h2>
+            <p>Wenn du ein Kunstwerk oder Raumfoto auswählst, erhält die App Zugriff auf die von dir ausgewählte Datei. Sie wird ausschließlich für die Vorschau, Bildkomposition und von dir gestartete Exporte verwendet.</p>
+            <ul>
+              <li>Gespeicherte Projekte und zugehörige Bilder liegen im privaten Speicherbereich der App.</li>
+              <li>Projektbilder werden nicht an den Betreiber oder einen eigenen Cloud-Dienst übertragen.</li>
+              <li>Projekte können in der App einzeln gelöscht werden.</li>
+              <li>Durch die Deinstallation werden die verbleibenden privaten App-Daten gelöscht.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>4. Kamera</h2>
+            <p>Die Kameraberechtigung ist optional. Sie wird erst angefragt, wenn du die Kamera-Vorschau auswählst. Damit kannst du ein Kunstwerk in deinem Raum positionieren und eine Aufnahme lokal als Raumvorlage übernehmen.</p>
+            <p>Kamerabilder werden nicht automatisch übertragen oder außerhalb deines Geräts analysiert. Wenn du keinen Kamerazugriff erlaubst, kannst du stattdessen ein vorhandenes Raumfoto auswählen.</p>
+          </section>
+
+          <section>
+            <h2>5. Diagnoseberichte</h2>
+            <p>Die lokale Crash- und ANR-Diagnose ist standardmäßig deaktiviert und wird nur mit deiner ausdrücklichen Zustimmung aktiviert. Sie kann App- und Android-Version, technische Stacktraces, ANR-Informationen und anonyme Bedienereignisse erfassen.</p>
+            <p>Diagnoseberichte enthalten keine Bilder, Projekt- oder Dateinamen. Sie bleiben im privaten App-Speicher und werden nicht automatisch versendet. Nur wenn du selbst „Diagnosebericht bewusst teilen“ auswählst, wird der Android-Teilen-Dialog geöffnet. Lokale Berichte können jederzeit in der App gelöscht werden.</p>
+          </section>
+
+          <section>
+            <h2>6. Export und Teilen</h2>
+            <p>Von dir gestartete Exporte werden im Ordner „Bilder/Off The Wall“ gespeichert. Beim Teilen übergibt die App den ausgewählten Export erst nach deiner Aktion an die von dir gewählte Drittanbieter-App, etwa einen Messenger oder ein soziales Netzwerk. Für die weitere Verarbeitung gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>
+          </section>
+
+          <section>
+            <h2>7. Backups</h2>
+            <p>Projektbilder und Diagnoseberichte sind in der App-Konfiguration von Android-Cloud-Backups und Geräteübertragungen ausgeschlossen.</p>
+          </section>
+
+          <section>
+            <h2>8. Berechtigungen</h2>
+            <ul>
+              <li><strong>Kamera:</strong> ausschließlich für die optionale Kamera-Vorschau und eine bewusst gestartete Raumaufnahme.</li>
+              <li><strong>Medienauswahl:</strong> Zugriff nur auf die von dir ausgewählten Bilder über die Android-Systemauswahl.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>9. Deine Kontrolle</h2>
+            <p>Du kannst Projekte und Diagnoseberichte innerhalb der App löschen, exportierte Bilder über die Galerie beziehungsweise Dateiverwaltung entfernen und die Kameraberechtigung jederzeit in den Android-Einstellungen widerrufen.</p>
+          </section>
+
+          <section>
+            <h2>10. Änderungen</h2>
+            <p>Diese Datenschutzerklärung wird angepasst, wenn sich Funktionen oder Datenverarbeitungen der App ändern. Die jeweils aktuelle Fassung ist unter dieser URL verfügbar.</p>
+            <p><strong>Stand:</strong> 23. August 2026</p>
+          </section>
+        </div>
+      </article>
+
+      <article data-language="en" lang="en">
+        <div class="hero">
+          <p class="eyebrow">Off The Wall · Android app</p>
+          <h1>Privacy Policy</h1>
+          <p class="intro">Off The Wall processes images and projects directly on your device. There are no user accounts, no advertising, and no automatic transfer to the app provider.</p>
+          <div class="summary">
+            <div><strong>Local</strong>Images and projects remain on your device.</div>
+            <div><strong>Optional</strong>Camera and diagnostics are optional features.</div>
+            <div><strong>Transparent</strong>Content is shared only after your explicit action.</div>
+          </div>
+        </div>
+
+        <div class="content">
+          <section>
+            <h2>1. Controller</h2>
+            <p>The party responsible for the app and this privacy policy is:</p>
+            <p><span class="placeholder">DEIN VOLLSTÄNDIGER NAME / UNTERNEHMEN</span><br>
+              Email: <a href="mailto:DEINE-EMAIL@BEISPIEL.DE"><span class="placeholder">DEINE-EMAIL@BEISPIEL.DE</span></a></p>
+            <div class="notice">Before publishing, replace both highlighted entries with your real name or company name and a working contact address.</div>
+          </section>
+
+          <section>
+            <h2>2. General data processing</h2>
+            <p>Off The Wall does not require a user account and does not operate its own server service. Imported artwork, room photos, projects, and exports are processed locally on the device. The app currently contains no advertising, analytics, tracking, or cloud SDKs and does not automatically transmit personal data to the app provider.</p>
+          </section>
+
+          <section>
+            <h2>3. Images, room photos, and projects</h2>
+            <p>When you select artwork or a room photo, the app receives access to that selected file. It is used solely for the preview, image composition, and exports initiated by you.</p>
+            <ul>
+              <li>Saved projects and their images are stored in the app's private storage.</li>
+              <li>Project images are not transferred to the app provider or a proprietary cloud service.</li>
+              <li>Projects can be deleted individually inside the app.</li>
+              <li>Uninstalling the app deletes its remaining private app data.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>4. Camera</h2>
+            <p>Camera access is optional and is requested only when you select the camera preview. It lets you position artwork in your room and locally capture the result as a room template.</p>
+            <p>Camera images are not automatically transferred or analysed outside your device. If you deny camera access, you can select an existing room photo instead.</p>
+          </section>
+
+          <section>
+            <h2>5. Diagnostic reports</h2>
+            <p>Local crash and ANR diagnostics are disabled by default and require your explicit consent. They may record the app and Android version, technical stack traces, ANR information, and anonymous interaction events.</p>
+            <p>Diagnostic reports contain no images, project names, or file names. They remain in the app's private storage and are never sent automatically. The Android sharing interface opens only when you explicitly select “Share diagnostic report”. Local reports can be deleted in the app at any time.</p>
+          </section>
+
+          <section>
+            <h2>6. Exporting and sharing</h2>
+            <p>Exports initiated by you are saved in the “Pictures/Off The Wall” folder. When sharing, the app passes the selected export to your chosen third-party app—such as a messenger or social network—only after your action. The third-party provider's privacy terms apply to any further processing.</p>
+          </section>
+
+          <section>
+            <h2>7. Backups</h2>
+            <p>Project images and diagnostic reports are excluded from Android cloud backups and device-to-device transfer by the app configuration.</p>
+          </section>
+
+          <section>
+            <h2>8. Permissions</h2>
+            <ul>
+              <li><strong>Camera:</strong> used solely for the optional camera preview and a room capture explicitly initiated by you.</li>
+              <li><strong>Media selection:</strong> access is limited to images you choose through the Android system picker.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>9. Your control</h2>
+            <p>You can delete projects and diagnostic reports inside the app, remove exported images through your gallery or file manager, and revoke camera permission at any time in Android Settings.</p>
+          </section>
+
+          <section>
+            <h2>10. Changes</h2>
+            <p>This privacy policy will be updated if the app's features or data processing practices change. The latest version is always available at this URL.</p>
+            <p><strong>Last updated:</strong> 23 August 2026</p>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <footer>© 2026 Off The Wall · Privacy first, by design.</footer>
+  </div>
+
+  <script>
+    const buttons = {
+      de: document.getElementById('language-de'),
+      en: document.getElementById('language-en')
+    };
+
+    function setLanguage(language) {
+      document.documentElement.lang = language;
+      document.title = language === 'de' ? 'Datenschutz · Off The Wall' : 'Privacy Policy · Off The Wall';
+      document.querySelectorAll('[data-language]').forEach((element) => {
+        element.classList.toggle('active', element.dataset.language === language);
+      });
+      Object.entries(buttons).forEach(([code, button]) => {
+        button.setAttribute('aria-pressed', String(code === language));
+      });
+    }
+
+    buttons.de.addEventListener('click', () => setLanguage('de'));
+    buttons.en.addEventListener('click', () => setLanguage('en'));
+
+    if (!navigator.language.toLowerCase().startsWith('de')) {
+      setLanguage('en');
+    }
+  </script>
+</body>
+</html>
