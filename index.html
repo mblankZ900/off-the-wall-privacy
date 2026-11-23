@@ -1,13 +1,8 @@
 <!doctype html>
-<html lang="de">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#12000e">
-  <meta name="description" content="Datenschutzerklärung und Privacy Policy der Android-App Off The Wall.">
-  <title>Datenschutz · Off The Wall</title>
-  <style>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark"><meta name="theme-color" content="#12000e"><meta name="robots" content="noindex">
+<meta name="description" content="Datenschutzerklärung und Privacy Policy der Android-App C’EST L’ART.">
+<title>Datenschutz · C’EST L’ART</title><style>
     :root {
       --background: #12000e;
       --surface: #251020;
@@ -195,7 +190,7 @@
       text-align: center;
     }
 
-    [data-language] { display: none; }
+    [data-language] { display: block; }
     [data-language].active { display: block; }
 
     @media (max-width: 680px) {
@@ -208,205 +203,91 @@
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
     }
-  </style>
-</head>
-<body>
-  <div class="page">
-    <header>
-      <a class="brand" href="#top"><span>OFF</span> THE WALL</a>
-      <div class="language-switch" role="group" aria-label="Sprache auswählen / Select language">
-        <button type="button" id="language-de" aria-pressed="true">DE</button>
-        <button type="button" id="language-en" aria-pressed="false">EN</button>
-      </div>
-    </header>
-
-    <main id="top">
-      <article data-language="de" class="active" lang="de">
-        <div class="hero">
-          <p class="eyebrow">Off The Wall · Android-App</p>
-          <h1>Datenschutzerklärung</h1>
-          <p class="intro">Off The Wall verarbeitet Bilder und Projekte direkt auf deinem Gerät. Es gibt keine Benutzerkonten, keine Werbung und keine automatische Übertragung an den Betreiber.</p>
-          <div class="summary">
-            <div><strong>Lokal</strong>Bilder und Projekte bleiben auf deinem Gerät.</div>
-            <div><strong>Freiwillig</strong>Kamera und Diagnose sind optionale Funktionen.</div>
-            <div><strong>Transparent</strong>Geteilt wird nur nach deiner ausdrücklichen Aktion.</div>
-          </div>
-        </div>
-
-        <div class="content">
-          <section>
-            <h2>1. Verantwortlicher</h2>
-            <p>Verantwortlich für die App und diese Datenschutzerklärung:</p>
-            <p><span class="placeholder">M. Blank</span><br>
-              E-Mail: <a href="mailto:offthewallsupport@gmx.de"><span class="placeholder">offthewallsupport@gmx.de</span></a></p>
-          </section>
-
-          <section>
-            <h2>2. Grundsatz der Datenverarbeitung</h2>
-            <p>Off The Wall benötigt kein Benutzerkonto und betreibt keinen eigenen Serverdienst. Importierte Kunstwerke, Raumfotos, Projekte und Exporte werden lokal auf dem Gerät verarbeitet. Die App enthält derzeit keine Werbe-, Analyse-, Tracking- oder Cloud-SDKs und übermittelt keine personenbezogenen Daten automatisch an den Betreiber.</p>
-          </section>
-
-          <section>
-            <h2>3. Bilder, Raumfotos und Projekte</h2>
-            <p>Wenn du ein Kunstwerk oder Raumfoto auswählst, erhält die App Zugriff auf die von dir ausgewählte Datei. Sie wird ausschließlich für die Vorschau, Bildkomposition und von dir gestartete Exporte verwendet.</p>
-            <ul>
-              <li>Gespeicherte Projekte und zugehörige Bilder liegen im privaten Speicherbereich der App.</li>
-              <li>Projektbilder werden nicht an den Betreiber oder einen eigenen Cloud-Dienst übertragen.</li>
-              <li>Projekte können in der App einzeln gelöscht werden.</li>
-              <li>Durch die Deinstallation werden die verbleibenden privaten App-Daten gelöscht.</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>4. Kamera</h2>
-            <p>Die Kameraberechtigung ist optional. Sie wird erst angefragt, wenn du die Kamera-Vorschau auswählst. Damit kannst du ein Kunstwerk in deinem Raum positionieren und eine Aufnahme lokal als Raumvorlage übernehmen.</p>
-            <p>Kamerabilder werden nicht automatisch übertragen oder außerhalb deines Geräts analysiert. Wenn du keinen Kamerazugriff erlaubst, kannst du stattdessen ein vorhandenes Raumfoto auswählen.</p>
-          </section>
-
-          <section>
-            <h2>5. Diagnoseberichte</h2>
-            <p>Die lokale Crash- und ANR-Diagnose ist standardmäßig deaktiviert und wird nur mit deiner ausdrücklichen Zustimmung aktiviert. Sie kann App- und Android-Version, technische Stacktraces, ANR-Informationen und anonyme Bedienereignisse erfassen.</p>
-            <p>Diagnoseberichte enthalten keine Bilder, Projekt- oder Dateinamen. Sie bleiben im privaten App-Speicher und werden nicht automatisch versendet. Nur wenn du selbst „Diagnosebericht bewusst teilen“ auswählst, wird der Android-Teilen-Dialog geöffnet. Lokale Berichte können jederzeit in der App gelöscht werden.</p>
-          </section>
-
-          <section>
-            <h2>6. Export und Teilen</h2>
-            <p>Von dir gestartete Exporte werden im Ordner „Bilder/Off The Wall“ gespeichert. Beim Teilen übergibt die App den ausgewählten Export erst nach deiner Aktion an die von dir gewählte Drittanbieter-App, etwa einen Messenger oder ein soziales Netzwerk. Für die weitere Verarbeitung gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>
-          </section>
-
-          <section>
-            <h2>7. Backups</h2>
-            <p>Projektbilder und Diagnoseberichte sind in der App-Konfiguration von Android-Cloud-Backups und Geräteübertragungen ausgeschlossen.</p>
-          </section>
-
-          <section>
-            <h2>8. Berechtigungen</h2>
-            <ul>
-              <li><strong>Kamera:</strong> ausschließlich für die optionale Kamera-Vorschau und eine bewusst gestartete Raumaufnahme.</li>
-              <li><strong>Medienauswahl:</strong> Zugriff nur auf die von dir ausgewählten Bilder über die Android-Systemauswahl.</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>9. Deine Kontrolle</h2>
-            <p>Du kannst Projekte und Diagnoseberichte innerhalb der App löschen, exportierte Bilder über die Galerie beziehungsweise Dateiverwaltung entfernen und die Kameraberechtigung jederzeit in den Android-Einstellungen widerrufen.</p>
-          </section>
-
-          <section>
-            <h2>10. Änderungen</h2>
-            <p>Diese Datenschutzerklärung wird angepasst, wenn sich Funktionen oder Datenverarbeitungen der App ändern. Die jeweils aktuelle Fassung ist unter dieser URL verfügbar.</p>
-            <p><strong>Stand:</strong> 23. August 2026</p>
-          </section>
-        </div>
-      </article>
-
-      <article data-language="en" lang="en">
-        <div class="hero">
-          <p class="eyebrow">Off The Wall · Android app</p>
-          <h1>Privacy Policy</h1>
-          <p class="intro">Off The Wall processes images and projects directly on your device. There are no user accounts, no advertising, and no automatic transfer to the app provider.</p>
-          <div class="summary">
-            <div><strong>Local</strong>Images and projects remain on your device.</div>
-            <div><strong>Optional</strong>Camera and diagnostics are optional features.</div>
-            <div><strong>Transparent</strong>Content is shared only after your explicit action.</div>
-          </div>
-        </div>
-
-        <div class="content">
-          <section>
-            <h2>1. Controller</h2>
-            <p>The party responsible for the app and this privacy policy is:</p>
-            <p><span class="placeholder">DEIN VOLLSTÄNDIGER NAME / UNTERNEHMEN</span><br>
-              Email: <a href="mailto:DEINE-EMAIL@BEISPIEL.DE"><span class="placeholder">DEINE-EMAIL@BEISPIEL.DE</span></a></p>
-            <div class="notice">Before publishing, replace both highlighted entries with your real name or company name and a working contact address.</div>
-          </section>
-
-          <section>
-            <h2>2. General data processing</h2>
-            <p>Off The Wall does not require a user account and does not operate its own server service. Imported artwork, room photos, projects, and exports are processed locally on the device. The app currently contains no advertising, analytics, tracking, or cloud SDKs and does not automatically transmit personal data to the app provider.</p>
-          </section>
-
-          <section>
-            <h2>3. Images, room photos, and projects</h2>
-            <p>When you select artwork or a room photo, the app receives access to that selected file. It is used solely for the preview, image composition, and exports initiated by you.</p>
-            <ul>
-              <li>Saved projects and their images are stored in the app's private storage.</li>
-              <li>Project images are not transferred to the app provider or a proprietary cloud service.</li>
-              <li>Projects can be deleted individually inside the app.</li>
-              <li>Uninstalling the app deletes its remaining private app data.</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>4. Camera</h2>
-            <p>Camera access is optional and is requested only when you select the camera preview. It lets you position artwork in your room and locally capture the result as a room template.</p>
-            <p>Camera images are not automatically transferred or analysed outside your device. If you deny camera access, you can select an existing room photo instead.</p>
-          </section>
-
-          <section>
-            <h2>5. Diagnostic reports</h2>
-            <p>Local crash and ANR diagnostics are disabled by default and require your explicit consent. They may record the app and Android version, technical stack traces, ANR information, and anonymous interaction events.</p>
-            <p>Diagnostic reports contain no images, project names, or file names. They remain in the app's private storage and are never sent automatically. The Android sharing interface opens only when you explicitly select “Share diagnostic report”. Local reports can be deleted in the app at any time.</p>
-          </section>
-
-          <section>
-            <h2>6. Exporting and sharing</h2>
-            <p>Exports initiated by you are saved in the “Pictures/Off The Wall” folder. When sharing, the app passes the selected export to your chosen third-party app—such as a messenger or social network—only after your action. The third-party provider's privacy terms apply to any further processing.</p>
-          </section>
-
-          <section>
-            <h2>7. Backups</h2>
-            <p>Project images and diagnostic reports are excluded from Android cloud backups and device-to-device transfer by the app configuration.</p>
-          </section>
-
-          <section>
-            <h2>8. Permissions</h2>
-            <ul>
-              <li><strong>Camera:</strong> used solely for the optional camera preview and a room capture explicitly initiated by you.</li>
-              <li><strong>Media selection:</strong> access is limited to images you choose through the Android system picker.</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>9. Your control</h2>
-            <p>You can delete projects and diagnostic reports inside the app, remove exported images through your gallery or file manager, and revoke camera permission at any time in Android Settings.</p>
-          </section>
-
-          <section>
-            <h2>10. Changes</h2>
-            <p>This privacy policy will be updated if the app's features or data processing practices change. The latest version is always available at this URL.</p>
-            <p><strong>Last updated:</strong> 23 August 2026</p>
-          </section>
-        </div>
-      </article>
-    </main>
-
-    <footer>© 2026 Off The Wall · Privacy first, by design.</footer>
-  </div>
-
-  <script>
-    const buttons = {
-      de: document.getElementById('language-de'),
-      en: document.getElementById('language-en')
-    };
-
-    function setLanguage(language) {
-      document.documentElement.lang = language;
-      document.title = language === 'de' ? 'Datenschutz · Off The Wall' : 'Privacy Policy · Off The Wall';
-      document.querySelectorAll('[data-language]').forEach((element) => {
-        element.classList.toggle('active', element.dataset.language === language);
-      });
-      Object.entries(buttons).forEach(([code, button]) => {
-        button.setAttribute('aria-pressed', String(code === language));
-      });
-    }
-
-    buttons.de.addEventListener('click', () => setLanguage('de'));
-    buttons.en.addEventListener('click', () => setLanguage('en'));
-
-    if (!navigator.language.toLowerCase().startsWith('de')) {
-      setLanguage('en');
-    }
-  </script>
-</body>
-</html>
+  
+.js [data-language] { display:none; }
+.js [data-language].active {display:block;}
+[hidden]{display:none!important;}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent-soft);outline-offset:4px;}
+</style></head><body><div class="page">
+<header><a class="brand" href="#top"><span>C’EST</span> L’ART</a>
+<div class="language-switch" role="group" aria-label="Sprache auswählen / Select language">
+<button type="button" id="language-de" aria-pressed="true">DE</button><button type="button" id="language-en" aria-pressed="false">EN</button></div></header>
+<main id="top"><article data-language="de" class="active" lang="de">
+<div class="hero"><p class="eyebrow">C’EST L’ART · Android-App</p><h1>Datenschutzerklärung</h1>
+<p class="intro">Deine Kunstwerke und lokalen Projekte bleiben auf deinem Gerät. Für Anmeldung, Abos, geschützte Open Calls und freigeschaltete KI-Räume werden die jeweils erforderlichen Daten online verarbeitet.</p><div class="summary"><div><strong>Lokal</strong>Kunstwerke, Gestaltung und persönliche Bewerbungen.</div><div><strong>Persönlich</strong>Ein Zugang für Konto, Abo, Räume und Calls.</div><div><strong>Kontrolliert</strong>Diagnose und Teilen nach deiner Auswahl.</div></div>
+<p class="notice">Prüffassung für das App-Update. Die vollständigen Betreiberangaben und noch offenen Vertrags-/Aufbewahrungsdetails sind vor Veröffentlichung zu ergänzen.</p><p style="margin-top:18px"><a href="#account-deletion-de">Kontolöschung beantragen</a></p></div>
+<div class="content"><section id="controller-de"><h2>1. Verantwortlicher und Kontakt</h2><p>Die bisherige Erklärung nennt als Verantwortlichen M. Blank. Kontakt für Datenschutz, Support und Kontolöschanfragen:</p>
+<p><a href="mailto:offthewallsupport@gmx.de?subject=Datenschutzanfrage">offthewallsupport@gmx.de</a></p>
+<p>Ein E-Mail-Link öffnet nur einen Entwurf. Dabei werden keine Kontokennungen, Kaufbelege oder Diagnoseberichte automatisch angehängt. Sende keine Passwörter, Anmelde- oder Sessiontokens und keine vollständigen Zahlungsunterlagen.</p></section><section id="scope-de"><h2>2. Lokale Funktionen und Onlineangebote</h2><p>C’EST L’ART richtet sich an erwachsene Kunstschaffende ab 18 Jahren. Portfolio, lokale Gestaltung, eigene Events und Bewerbungen lassen sich ohne Google-Anmeldung verwenden. Onlinefunktionen verbinden sich mit unserem Backend unter api.blank-arts.de.</p>
+<p>Konto-, Abo- und KI-Funktionen stehen nur zur Verfügung, wenn sie in deiner App-Version und im Dienst freigeschaltet sind. Die Beschreibung einer Funktion in dieser Erklärung schaltet sie nicht frei.</p></section><section id="local-de"><h2>3. Kunstwerke, Raumfotos, Kamera und Bewerbungen</h2><p>Importierte Kunstwerke, ausgewählte Raumfotos, Werkdaten, Projekte und persönliche Bewerbungen werden auf deinem Gerät verwaltet. Rahmen, Platzierung und Lichtgestaltung werden lokal berechnet. Dein Originalkunstwerk wird nicht für die hier beschriebene KI-Raumgenerierung hochgeladen.</p>
+<p>Die Kamera ist optional und wird für eine von dir gewählte Vorschau oder Aufnahme verwendet. Du kannst stattdessen ein vorhandenes Raumfoto auswählen. Medien werden über die Android-Systemauswahl ausgewählt. Die App fordert keine GPS-Berechtigung an; manuelle Ortsangaben und Umkreisberechnungen bleiben lokal.</p>
+<p>Du kannst lokale Projekte und Bilder gezielt löschen. Exporte, selbst angelegte Sicherungen und bereits geteilte Kopien verwaltest du am jeweiligen Speicherort. Die Deinstallation oder eine serverseitige Kontolöschung entfernt keine bereits exportierten oder an andere Dienste übergebenen Dateien.</p></section><section id="calls-de"><h2>4. Open Calls und externe Websites</h2><p>Die App lädt redaktionell veröffentlichte Ausschreibungen über HTTPS. Persönliche Bewerbungen, Checklisten und gespeicherte Bewerbungsrunden werden nicht zur Ausschreibungssuche an unser Backend übertragen.</p>
+<p>Eine begrenzte Vorschau ist von einem freigeschalteten vollständigen Abozugang zu unterscheiden. Der Zugriff auf aktuelle geschützte Open Calls wird über die gemeinsame persönliche Berechtigung geprüft und hängt nicht von verbleibenden Raumcredits ab. Beim Öffnen einer Originalausschreibung entsteht eine Verbindung zur jeweiligen Website; dort gelten die Bedingungen des jeweiligen Anbieters.</p></section><section id="account-de"><h2>5. Google-Anmeldung und persönliche Sessions</h2><p>Wenn du Google-Anmeldung wählst, wird der Google-Anmeldenachweis zur Prüfung an unseren Kontodienst übertragen. Dieser verbindet die Google-Kontokennung mit einer internen Nutzerkennung und speichert die für sichere Anmeldung und Erneuerung erforderlichen Sessiondaten. Wir legen kein eigenes Passwort an.</p>
+<p>Der vollständige Anmeldenachweis kann Google-Profilangaben enthalten; die dauerhafte Kontoverknüpfung benötigt bei uns keinen gespeicherten Namen und keine gespeicherte E-Mail-Adresse. Google verarbeitet Anmeldedaten zusätzlich nach seinen eigenen Bedingungen.</p>
+<p>Die App schützt persönliche Zugangsnachweise und gegebenenfalls den Löschstatusbeleg mit Android-Keystore-Schlüsseln. Abmelden beendet den persönlichen Zugang, löscht aber weder das serverseitige Konto noch lokale Projekte oder Kaufnachweise. Konto, Abo, Räume und Calls verwenden denselben persönlichen Zugang.</p></section><section id="billing-de"><h2>6. Google Play, Abos und Raumkontingent</h2><p>Google Play wickelt Zahlungen ab. Wir erhalten keine Karten- oder Bankdaten. Für Kaufprüfung, Wiederherstellung und die Zuordnung bezahlter Zeiträume verarbeitet der Kontodienst Kauftokens, interne Kontobindungen, Abostatus, bestätigte Abrechnungsperioden sowie Kontingent- und Nutzungsnachweise. Kauftokens werden auf dem Server verschlüsselt gespeichert; abgeleitete Kennungen bleiben personenbezogene Daten.</p>
+<p>Der Dienst gleicht Käufe und Abostatus mit Google ab und empfängt technische Kaufereignisse. Google Play erhält hierfür eine undurchsichtige interne Kontobindung statt deiner E-Mail-Adresse. Lokale Kaufjournale verhindern unbeabsichtigte Wiederholungen und werden durch Diagnosebereinigung nicht entfernt.</p>
+<p>Ein Aboende löscht keine lokalen Projekte oder Bewerbungen. Ein ausgeschöpftes Raumkontingent ist nicht gleichbedeutend mit einem beendeten Abo.</p></section><section id="ai-de"><h2>7. KI-Raumhintergründe mit Google Gemini</h2><p>Bei einer freigeschalteten KI-Raumanfrage senden wir die eingegebene Raumbeschreibung an Google Gemini: zunächst zur textlichen Zweckprüfung und anschließend gegebenenfalls zur Bilderzeugung. Technische Gestaltungsanweisungen und das gewählte Bildformat werden mitgesendet. Die erzeugte Raumgrafik wird über unseren Dienst bereitgestellt; eine bewusst gespeicherte lokale Kopie verwaltest du auf deinem Gerät.</p>
+<p>Dieser Raumgenerator sendet keine Kunstwerke oder Raumfotos an Gemini. Kontokennung, persönliche Session und Google-Play-Kauftokens werden den beiden Provideranfragen nicht hinzugefügt. Bitte trage keine vertraulichen Informationen oder personenbezogenen Angaben anderer Personen in die Raumbeschreibung ein.</p>
+<p>Für kostenpflichtige Gemini-API-Dienste beschreibt Google die Verarbeitung von Eingaben und Ausgaben zur Diensterbringung, ohne sie zur Verbesserung seiner Produkte zu verwenden. Begrenzte Sicherheitsprotokollierung und internationale Verarbeitung können dennoch stattfinden. Eine Einstellung zum Nicht-Speichern einer Anfrage ist keine Zusage, dass beim Anbieter keinerlei Daten verbleiben.</p>
+<p><a href="https://aistudio.google.com/docs/terms">Gemini-API-Bedingungen</a> · <a href="https://policies.google.com/privacy?hl=de">Google-Datenschutzerklärung</a></p></section><section id="diagnostics-de"><h2>8. Freiwillige lokale Diagnose</h2><p>Die lokale Crash- und ANR-Diagnose ist standardmäßig deaktiviert. Wenn du sie aktivierst, können Gerätehersteller und -modell, App- und Android-Version, Zeitpunkte, technische Fehlerdetails und begrenzte Bedienereignisse lokal gespeichert werden. Technische Fehlertexte sind nicht pauschal anonym.</p>
+<p>Es werden höchstens 20 lokale Berichte vorgehalten. Diese Appberichte werden nicht automatisch versendet. Prüfe einen Bericht vor dem freiwilligen Teilen; erst deine Auswahl im Android-Teilen-Dialog übergibt ihn an eine andere App. Die lokale Diagnosebereinigung löscht Berichte und Bedienverlauf, meldet dich aber nicht ab und löscht kein Konto. Google Play kann eigene Stabilitätsdaten nach seinen gesonderten Einstellungen verarbeiten.</p></section><section id="sharing-de"><h2>9. Export, Teilen und Gerätesicherungen</h2><p>Exporte und von dir erstellte ZIP-Sicherungen werden am gewählten beziehungsweise von der App angezeigten Speicherort abgelegt. Beim Teilen erhält die von dir gewählte Ziel-App die ausgewählte Datei. Für deren weitere Verarbeitung ist der jeweilige Anbieter zuständig.</p>
+<p>Die App-Konfiguration schließt unter anderem Projekt- und Portfoliodaten, Bewerbungen, Diagnoseberichte und persönliche Sessionablagen aus Android-Cloud-Backups und Geräteübertragungen aus. Bewusst erstellte Exporte oder eigene Sicherungen sind davon getrennt.</p></section><section id="providers-de"><h2>10. Hosting, Verbindungen und Kontakt</h2><p>Bei Onlineverbindungen werden IP-Adressen und technisch notwendige Verbindungsdaten verarbeitet. Unser Backend wird auf einem IONOS-VPS betrieben. Google ist für Anmeldung, Google Play und bei KI-Raumanfragen Gemini beteiligt. Diese Datenschutzseite wird über GitHub Pages ausgeliefert. Beim Besuch kann GitHub technische Zugriffsdaten verarbeiten.</p>
+<p>Für Support- und Datenschutzkorrespondenz nutzen wir das angegebene GMX-Postfach. Wenn du uns schreibst, verarbeiten wir deine Absenderadresse und den Inhalt zur Bearbeitung deines Anliegens. Freiwillig mitgesendete Anhänge werden dadurch ebenfalls über den E-Mail-Dienst verarbeitet.</p>
+<p>Technische Protokolle können Anfrage-, Fehler- und Verbindungsdetails enthalten. Es wird keine vollständige IP-Logfreiheit zugesagt. Die Anbieter können Daten nach ihren jeweiligen Bedingungen auch außerhalb des EWR verarbeiten.</p>
+<p><a href="https://www.ionos.de/terms-gtc/datenschutzerklaerung/">IONOS-Datenschutz</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub-Datenschutz</a> · <a href="https://www.gmx.net/unternehmen/datenschutz/">GMX-Datenschutz</a></p></section><section id="account-deletion-de"><h2>11. Kontolöschung beantragen</h2><p>Du kannst die Löschung deines Appkontos und der zugehörigen persönlichen Serverdaten auch ohne installierte App anfordern: <a href="mailto:offthewallsupport@gmx.de?subject=Kontol%C3%B6schung%20C%E2%80%99EST%20L%E2%80%99ART">offthewallsupport@gmx.de – Betreff „Kontolöschung C’EST L’ART“</a>. Ein freigeschalteter In-App-Löschweg steht zusätzlich zur Verfügung. Wir erläutern dir die sichere Berechtigungsprüfung. Eine E-Mail oder ein Screenshot allein ist kein ausreichender Kontonachweis.</p>
+<p>Eine sicher geprüfte, angenommene Anfrage sperrt den betroffenen Kontozugang; die Entfernung persönlicher Serverdaten erfolgt betreut. Eine Eingangsbestätigung ist noch keine Bestätigung abgeschlossener Entfernung. Auch die Entfernung persönlicher Kontodaten bedeutet nicht, dass begrenzte Kaufnachweise, das Löschregister und sämtliche Sicherungen bereits entfernt sind.</p>
+<p>Die Kontolöschung setzt keine vorherige Kündigung voraus und kündigt ein Google-Play-Abo nicht automatisch. Lokale Werke, Projekte, eigene Räume und Bewerbungen bleiben auf deinem Gerät. Eine spätere Anmeldung stellt alte Kaufbindungen oder Credits nicht automatisch wieder her.</p>
+<p><a href="https://play.google.com/store/account/subscriptions?package=de.offthewall.app&amp;sku=cestlart_rooms">Abonnement bei Google Play verwalten</a></p></section><section id="retention-de"><h2>12. Aufbewahrung und begrenzte Restdaten</h2><p>Für den freigegebenen Löschbetrieb gelten die folgenden bestätigten technischen Vorgaben. Es handelt sich nicht um pauschale gesetzliche Aufbewahrungsfristen:</p>
+<ul><li>Persönliche Identitätsverknüpfung, Sessions und temporäre Serverräume: Entfernung innerhalb von 24 Stunden nach sicher geprüfter, angenommener Löschanfrage.</li><li>Verwaltete Serverbackups: höchstens 30 Tage ab ursprünglicher Erstellung. Das Kopieren setzt die Frist nicht neu.</li><li>Minimale Kauf-, Zyklus-, Nutzungs- und Replaynachweise: 90 Tage nach endgültigem bestätigtem Aboende und Abschluss offener Kaufbestätigungen; ohne Käufe 90 Tage ab Löschung.</li><li>Notwendige verschlüsselte Play-Kauftokens: nur für erforderliche laufende Abwicklung, spätestens 60 Tage nach verifiziertem endgültigem Aboablauf; früher, sobald entbehrlich. Ungeklärte Restfälle werden gesondert geprüft.</li><li>Technische Details abgeschlossener Kaufprüfungen: 30 Tage nach Abschluss; persönliche Details bei Kontolöschung innerhalb von 24 Stunden minimieren.</li><li>Das minimale Löschregister bleibt bis zum Ende wiederherstellbarer alter Sicherungen und notwendiger Replayfristen erhalten. Es verhindert, dass eine Wiederherstellung gelöschte Konten ungeprüft reaktiviert.</li><li>Datenschutz- und Supportkorrespondenz: grundsätzlich 90 Tage nach Abschluss des Anliegens; notwendige begründete Ausnahmefälle werden gesondert behandelt.</li></ul>
+<p>Fehler oder Wiederholungen setzen den ursprünglichen Anfragezeitpunkt nicht zurück. Gesetzlich notwendige Buchhaltungsunterlagen und konkrete Rechtsfälle werden nach ihrem jeweiligen Zweck und ihrer zutreffenden Frist getrennt behandelt. Daraus folgt keine pauschale längere Speicherung des gesamten Appkontos. Lokale Dateien und eigene Exporte kannst du selbst verwalten.</p></section><section id="rights-de"><h2>13. Zwecke, Rechtsgrundlagen und deine Rechte</h2><p>Die von dir angeforderten Konto-, Abo- und Onlineleistungen werden zur Durchführung des Nutzungsverhältnisses verarbeitet (Art. 6 Abs. 1 Buchst. b DSGVO). Für erforderliche Sicherheitsmaßnahmen, Missbrauchs- und Wiederholungsschutz stützen wir uns auf berechtigte Interessen am sicheren und zuverlässigen Betrieb (Art. 6 Abs. 1 Buchst. f DSGVO). Gesetzlich erforderliche Bearbeitung von Datenschutzanliegen und Aufbewahrung beruhen auf Art. 6 Abs. 1 Buchst. c DSGVO. Soweit eine Verarbeitung auf deiner Einwilligung beruht, kannst du sie für die Zukunft widerrufen (Art. 6 Abs. 1 Buchst. a DSGVO).</p>
+<p>Nach den gesetzlichen Voraussetzungen hast du Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. Wende dich an <a href="mailto:offthewallsupport@gmx.de?subject=Datenschutzanfrage">offthewallsupport@gmx.de</a>. Du kannst dich außerdem bei einer Datenschutzaufsichtsbehörde beschweren, insbesondere an deinem gewöhnlichen Aufenthaltsort, Arbeitsplatz oder am Ort des vermuteten Verstoßes.</p>
+<p>Lokale Berechtigungen, darunter Kamerazugriff, kannst du in den Android-Einstellungen widerrufen. Das beendet nicht automatisch ein Abo und löscht kein serverseitiges Konto.</p></section><section id="changes-de"><h2>14. Änderungen und Stand</h2><p>Diese Erklärung wird angepasst, wenn sich die App oder die beschriebenen Datenverarbeitungen ändern. Maßgeblich ist die zur verwendeten App-Version und den freigeschalteten Funktionen passende Fassung.</p>
+<p><strong>Stand der Überarbeitung: 23. November 2026.</strong></p></section></div></article><article data-language="en" class="" lang="en">
+<div class="hero"><p class="eyebrow">C’EST L’ART · Android-App</p><h1>Privacy Policy</h1>
+<p class="intro">Your artwork and local projects remain on your device. Sign-in, subscriptions, protected Open Calls and enabled AI rooms process the data needed for those online features.</p><div class="summary"><div><strong>Local</strong>Artwork, editing and personal applications.</div><div><strong>Personal</strong>Shared access for account, subscription, rooms and Calls.</div><div><strong>Your choice</strong>Optional diagnostics and deliberate sharing.</div></div>
+<p class="notice">Review copy for the app update. Complete controller information and outstanding contractual/retention details before publication.</p><p style="margin-top:18px"><a href="#account-deletion-en">Request account deletion</a></p></div>
+<div class="content"><section id="controller-en"><h2>1. Controller and contact</h2><p>The existing policy names M. Blank as controller. Contact for privacy, support and account deletion requests:</p>
+<p><a href="mailto:offthewallsupport@gmx.de?subject=Privacy%20enquiry">offthewallsupport@gmx.de</a></p>
+<p>An email link only opens a draft. No account identifiers, purchase proofs or diagnostic reports are attached automatically. Do not send passwords, sign-in or session tokens, or complete payment documents.</p></section><section id="scope-en"><h2>2. Local features and online services</h2><p>C’EST L’ART is intended for adult artists aged 18 and over. Your portfolio, local editing, personal events and applications can be used without Google sign-in. Online features connect to our backend at api.blank-arts.de.</p>
+<p>Account, subscription and AI features are available only when enabled in your app version and on the service. Describing a feature in this policy does not activate it.</p></section><section id="local-en"><h2>3. Artwork, room photos, camera and applications</h2><p>Imported artwork, selected room photos, artwork records, projects and personal applications are managed on your device. Frames, placement and lighting are calculated locally. Your original artwork is not uploaded for the AI room generation described here.</p>
+<p>Camera access is optional and used for a preview or capture you choose. You can select an existing room photo instead. Media is selected through the Android system picker. The app does not request GPS permission; manually entered locations and distance calculations remain local.</p>
+<p>You can delete local projects and images individually. Manage exports, your own backups and previously shared copies at their respective locations. Uninstalling the app or deleting a server-side account does not remove files already exported or handed to other services.</p></section><section id="calls-en"><h2>4. Open Calls and external websites</h2><p>The app downloads editorially published opportunities over HTTPS. Personal applications, checklists and saved application rounds are not uploaded to search for opportunities.</p>
+<p>A limited preview is separate from enabled full subscription access. Access to current protected Open Calls uses the shared personal entitlement and is independent of remaining room credits. Opening an original opportunity connects to its website, where that provider’s terms apply.</p></section><section id="account-en"><h2>5. Google sign-in and personal sessions</h2><p>If you choose Google sign-in, the Google sign-in proof is sent to our account service for verification. The service links the Google account identifier to an internal user identifier and stores session data required for secure access and renewal. We do not create a separate password.</p>
+<p>The full sign-in proof may contain Google profile information; our persistent account link does not require a stored name or email address. Google also processes sign-in data under its own terms.</p>
+<p>The app protects personal access credentials and any deletion-status receipt with Android Keystore keys. Signing out ends personal access but does not delete the server-side account, local projects or purchase evidence. Account, subscription, rooms and Calls share the same personal access.</p></section><section id="billing-en"><h2>6. Google Play, subscriptions and room credits</h2><p>Google Play handles payments. We do not receive card or bank details. For purchase verification, restoration and paid-period allocation, the account service processes purchase tokens, internal account bindings, subscription states, verified billing periods, credit records and usage evidence. Purchase tokens are encrypted on the server; derived identifiers remain personal data.</p>
+<p>The service checks purchases and subscription status with Google and receives technical purchase events. Google Play receives an opaque internal account binding rather than your email address for this purpose. Local purchase journals prevent unintended repeats and are not removed by diagnostic cleanup.</p>
+<p>Subscription expiry does not delete local projects or applications. Exhausted room credits do not necessarily mean that a subscription has expired.</p></section><section id="ai-en"><h2>7. AI room backgrounds with Google Gemini</h2><p>When AI room generation is enabled and you request it, your room description is sent to Google Gemini: first for a text-based purpose check and then, where appropriate, for image generation. Technical composition instructions and the selected image format are also sent. The generated room image is delivered through our service; you manage any local copy you choose to save.</p>
+<p>This room generator does not send artwork or room photos to Gemini. Account identifiers, personal sessions and Google Play purchase tokens are not added to these two provider requests. Please do not include confidential information or other people’s personal data in a room description.</p>
+<p>For paid Gemini API services, Google describes processing inputs and outputs to provide the service without using them to improve its products. Limited security logging and international processing may still take place. A request setting that disables storage does not mean that the provider retains no data at all.</p>
+<p><a href="https://aistudio.google.com/docs/terms">Gemini API terms</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a></p></section><section id="diagnostics-en"><h2>8. Optional local diagnostics</h2><p>Local crash and ANR diagnostics are off by default. If enabled, they may record device manufacturer/model, app and Android versions, timestamps, technical error details and limited interaction events locally. Technical error text is not inherently anonymous.</p>
+<p>At most 20 local reports are retained. These app reports are not sent automatically. Review a report before sharing voluntarily; choosing a destination in Android’s sharing interface hands it to another app. Local diagnostic cleanup removes reports and the interaction trail but does not sign you out or delete your account. Google Play may process its own stability information under separate settings.</p></section><section id="sharing-en"><h2>9. Exports, sharing and device backups</h2><p>Exports and ZIP backups you create are saved to the location you choose or that the app displays. When sharing, your chosen destination app receives the selected file. That provider is responsible for further processing.</p>
+<p>The app configuration excludes, among other things, project and portfolio data, applications, diagnostic reports and personal session storage from Android cloud backups and device transfers. Exports and backups that you deliberately create are separate.</p></section><section id="providers-en"><h2>10. Hosting, connections and correspondence</h2><p>Online connections process IP addresses and necessary connection metadata. Our backend runs on an IONOS VPS. Google is involved in sign-in, Google Play and, for AI room requests, Gemini. This policy page is hosted on GitHub Pages; GitHub may process technical access data when you visit it.</p>
+<p>We use the stated GMX mailbox for support and privacy correspondence. If you contact us, we process your sender address and message to handle your enquiry. Attachments you choose to send are also processed through the email service.</p>
+<p>Technical logs may contain request, error and connection details. We do not promise zero IP logging. Providers may process data outside the EEA under their applicable terms.</p>
+<p><a href="https://www.ionos.de/terms-gtc/datenschutzerklaerung/">IONOS privacy information</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a> · <a href="https://www.gmx.net/unternehmen/datenschutz/">GMX privacy information</a></p></section><section id="account-deletion-en"><h2>11. Request account deletion</h2><p>You can request deletion of your app account and associated personal server-side data even without the app installed: <a href="mailto:offthewallsupport@gmx.de?subject=Account%20deletion%20C%E2%80%99EST%20L%E2%80%99ART">offthewallsupport@gmx.de – subject “Account deletion C’EST L’ART”</a>. An enabled in-app deletion flow is an additional option. We explain how to verify your authority securely. An email or screenshot alone is not sufficient proof of account ownership.</p>
+<p>An authenticated, accepted request suspends access to the affected account; personal server-side data is removed through an operator-assisted process. Acknowledging a request does not confirm completed removal. Removing personal account data does not mean that limited purchase evidence, deletion replay records and all backups have already been removed.</p>
+<p>You do not have to cancel a Google Play subscription before requesting deletion. Account deletion does not automatically cancel it. Local artwork, projects, saved rooms and applications remain on your device. Signing in later does not automatically restore old purchase bindings or credits.</p>
+<p><a href="https://play.google.com/store/account/subscriptions?package=de.offthewall.app&amp;sku=cestlart_rooms">Manage your Google Play subscription</a></p></section><section id="retention-en"><h2>12. Retention and limited residual records</h2><p>The following confirmed technical rules apply to the enabled deletion process. They are not universal statutory retention periods:</p>
+<ul><li>Personal identity links, sessions and temporary server rooms: removal within 24 hours of an authenticated, accepted deletion request.</li><li>Managed server backups: a maximum of 30 days from original creation. Copying does not restart the period.</li><li>Minimal purchase, billing-cycle, usage and replay evidence: 90 days after verified final subscription expiry and completion of pending purchase acknowledgements; without purchases, 90 days after deletion.</li><li>Necessary encrypted Play purchase tokens: only for required ongoing processing and no later than 60 days after verified final subscription expiry; sooner when no longer necessary. Unresolved cases require separate review.</li><li>Technical details of completed purchase verifications: 30 days after completion; personal details are minimised within 24 hours on account deletion.</li><li>Minimal deletion replay records remain until old restorable backups and necessary replay periods have expired, to prevent a restore from reactivating deleted accounts without checks.</li><li>Privacy and support correspondence: normally 90 days after the enquiry is closed; necessary justified exceptions are handled separately.</li></ul>
+<p>Errors and retries do not reset the original request time. Legally required accounting documents and specific legal cases are handled separately for their applicable purposes and periods. This does not mean retaining the entire app account for that longer period. You manage local files and your own exports.</p></section><section id="rights-en"><h2>13. Purposes, legal bases and your rights</h2><p>Requested account, subscription and online services are processed to perform the user relationship (Article 6(1)(b) GDPR). Necessary security, abuse prevention and replay protection rely on legitimate interests in secure, reliable operation (Article 6(1)(f) GDPR). Legally required handling of privacy requests and retention rely on Article 6(1)(c) GDPR. Where processing is based on consent, you may withdraw it for the future (Article 6(1)(a) GDPR).</p>
+<p>Subject to applicable legal requirements, you have rights of access, rectification, erasure, restriction, portability and objection. Contact <a href="mailto:offthewallsupport@gmx.de?subject=Privacy%20enquiry">offthewallsupport@gmx.de</a>. You may also complain to a supervisory authority, particularly where you habitually reside, work or where the alleged infringement occurred.</p>
+<p>You can revoke local permissions, including camera access, in Android Settings. This does not automatically cancel a subscription or delete a server-side account.</p></section><section id="changes-en"><h2>14. Changes and date</h2><p>This policy is updated when the app or described processing changes. The applicable version must match the app version you use and its enabled features.</p>
+<p><strong>Revision date: 23 November 2026.</strong></p></section></div></article></main>
+<footer>© 2026 C’EST L’ART · <a href="mailto:offthewallsupport@gmx.de">offthewallsupport@gmx.de</a></footer>
+</div><script>
+document.documentElement.classList.add('js');
+const buttons={de:document.getElementById('language-de'),en:document.getElementById('language-en')};
+function setLanguage(language){
+  language=language==='en'?'en':'de';
+  document.documentElement.lang=language;
+  document.title=(language==='de'?'Datenschutz':'Privacy Policy')+' · C’EST L’ART';
+  document.querySelectorAll('[data-language]').forEach(e=>{const active=e.dataset.language===language;e.classList.toggle('active',active);e.hidden=!active;});
+  Object.entries(buttons).forEach(([code,button])=>button.setAttribute('aria-pressed',String(code===language)));
+  if(location.hash.includes('account-deletion-')){location.hash='account-deletion-'+language;}
+}
+buttons.de.addEventListener('click',()=>setLanguage('de'));
+buttons.en.addEventListener('click',()=>setLanguage('en'));
+function fromHash(){if(location.hash.endsWith('-en'))setLanguage('en');else if(location.hash.endsWith('-de'))setLanguage('de');}
+window.addEventListener('hashchange',fromHash);
+setLanguage(location.hash.endsWith('-en')?'en':location.hash.endsWith('-de')?'de':navigator.language.toLowerCase().startsWith('de')?'de':'en');
+</script></body></html>
